@@ -18,14 +18,6 @@
     --radius: 10px;
 }
 
-body.dark {
-    --fundo-principal: #0c1125;
-    --fundo-lateral: #141a2c;
-    --card: #1b2338;
-    --texto: #f1f1f1;
-    --texto-inverso: #b8b8b8;
-}
-
 /* --- GERAL --- */
 body {
     font-family: "Bebas Neue", sans-serif;
@@ -69,8 +61,8 @@ body {
 img#logo {
     width: 80px;
     border-radius: 10px;
-    border: 5px solid var(--fundo-lateral); 
-    outline: 5px solid var(--fundo-principal); 
+    border: 3px solid var(--fundo-lateral); 
+    outline: 3px solid var(--fundo-principal); 
     margin: auto;
     margin-bottom: 20px;
     
@@ -121,13 +113,10 @@ li {
     list-style: none;
 }
 
-
-/* --- CONTEÚDO --- */
 .content {
     flex: 1;
     padding: 25px;
 }
-
 
 /* --- TOPBAR --- */
 .topbar {
@@ -135,35 +124,41 @@ li {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
-.topbar .actions {
+.topbar-esquerdo {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 12px;
 }
 
-.topbar input {
-    padding: 10px;
-    border-radius: var(--radius);
-    border: 1px solid #d3d3d3;
+.topbar-esquerdo h1 {
+    margin: 0;
 }
 
-#toggleDark {
-    background-color: var(--fundo-principal);
+.topbar-direito {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.topbar-direito input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgb(204, 204, 204);
+    width: 220px;
+}
+
+.botao-chama {
+    background: #26a843;
     border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background: var(--primaria);
     color: white;
-    padding: 10px 18px;
-    border: none;
-    border-radius: var(--radius);
+    padding: 10px 16px;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
 }
-
 
 /* --- CARDS --- */
 .cards {
@@ -186,7 +181,6 @@ li {
 .card h2 {
     margin-top: 10px;
 }
-
 
 /* --- TABELA --- */
 .table-section {
@@ -243,9 +237,18 @@ td i {
         flex-direction: column;
     }
 
+    .topbar-direito {
+        margin-top: 10px;
+    }
+
     .sidebar {
         width: 100%;
         height: auto;
+    }
+
+    #logo {
+        display: flex;
+        margin-left: auto;
     }
 
     .menu-toggle {
