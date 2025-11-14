@@ -7,6 +7,6 @@ toggle.addEventListener('click', () => {
 
 document.getElementById("logoutBtn").addEventListener("click", () => {
     localStorage.removeItem("logado");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 });
 
