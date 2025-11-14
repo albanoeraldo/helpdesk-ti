@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <link rel="stylesheet" href="helpdesk/assets/css/login.css">
+    <link rel="shortcut icon" href="helpdesk/imagens/favicon.ico" type="image/x-icon">
+    <title>HelpDesk</title>
+</head>
+<body>
+    <div class="login-container">
+
+    <div class="login-card">
+        <img src="helpdesk/imagens/logo.png" class="login-logo" alt="Logo">
+
+        <h2>Bem-vindo(a)</h2>
+        <p>Entre para acessar o sistema</p>
+
+        <form id="loginForm">
+            <label>Email</label>
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" required>
+            </div>
+
+            <label>Senha</label>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="senha" required>
+            </div>
+
+            <button type="submit" class="btn-login">Entrar</button>
+
+            <span id="errorMsg"></span>
+        </form>
+    </div>
+
+</div>
+
+<script src="helpdesk/assets/js/login.js"></script>
+
+</body>
+</body>
+</html>

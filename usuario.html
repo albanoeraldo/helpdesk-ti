@@ -11,6 +11,13 @@
     <script src="https://kit.fontawesome.com/7cd5b377e4.js" crossorigin="anonymous"></script>
     <title>HelpDesk</title>
 </head>
+    <!-- para ver a página do login primeiro -->
+    <script>
+    if (localStorage.getItem("logado") !== "true") {
+    window.location.href = "login.html";
+    }
+    </script>
+
 <body>
     <div class="container">
     <aside class="sidebar">
@@ -28,7 +35,7 @@
     <!-- MENU -->
     <nav class="menu">
         <ul>
-            <li><a href="index.html"><i class="fa-solid fa-grip"></i> Dashboard</a></li>
+            <li><a href="dashboard.html"><i class="fa-solid fa-grip"></i> Dashboard</a></li>
             <li><a href="chamado.html"><i class="fa-solid fa-bell"></i> Chamados</a></li>
             <li><a href="usuario.html"><i class="fa-solid fa-users"></i> Usuários</a></li>
             <li><a href="equipamento.html"><i class="fa-solid fa-toolbox"></i> Equipamentos</a></li>
@@ -121,7 +128,8 @@
 
             </table>
         </section>
-
+        <!-- sair -->
+        <button id="logoutBtn">Sair</button>
     </main>
 
     <script src="helpdesk/assets/js/script.js"></script>
