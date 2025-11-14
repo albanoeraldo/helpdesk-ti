@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="helpdesk/assets/css/usuarios.css">
+    <link rel="stylesheet" href="helpdesk/assets/css/equipamento.css">
+    <link rel="shortcut icon" href="helpdesk/imagens/favicon.ico" type="image/x-icon">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     </style>
-    <link rel="shortcut icon" href="helpdesk/imagens/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7cd5b377e4.js" crossorigin="anonymous"></script>
     <title>HelpDesk</title>
 </head>
@@ -43,27 +43,51 @@
         <div class="topbar">
 
         <div class="topbar-esquerdo">
-            <h1>Usuários</h1>
+            <h1>Equipamentos</h1>
         </div>
 
         <div class="topbar-direito">
-            <input type="text" placeholder="Buscar Usuário...">
-            <button class="botao-chama">Novo Usuário</button>
+            <input type="text" placeholder="Buscar equipamento...">
+            <button class="botao-chama">Novo Equipamento</button>
         </div>
 
         </div>
+
+        <!-- Cards inicio -->
+        <section class="cards"> 
+            <div class="card">
+                <p>Total de Equipamentos</p>
+                <h2>135</h2>
+            </div>
+
+            <div class="card">
+                <p>Em uso</p>
+                <h2>100</h2>
+            </div>
+
+            <div class="card">
+                <p>Em manutenção</p>
+                <h2>25</h2>
+            </div>
+
+            <div class="card">
+                <p>Com problemas</p>
+                <h2>10</h2>
+            </div>
+        </section>
 
         <!-- Tabela -->
         <section class="table-section">
-            <h3>Lista de Usuários</h3>
+            <h3>Lista de Equipamentos</h3>
 
             <table>
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nome</th>
-                        <th>Cargo</th>
-                        <th>Setor</th>
+                        <th>Tipo</th>
+                        <th>Marca</th>
+                        <th>Setor responsável</th>
+                        <th>Usuário responsável</th>
                         <th>Status</th>
                         <th>Ações</th>
                     </tr>
@@ -72,11 +96,13 @@
                 <tbody>
                     <tr>
                         <td>#1</td>
-                        <td>Maria Santos</td>
-                        <td>Gestor</td>
+                        <td>Notebook</td>
+                        <td>ACER</td>
                         <td>Financeiro</td>
-                        <td><span class="status ativo">Ativo</span></td>
+                        <td>Luiz</td>
+                        <td><span class="status uso">Em uso</span></td>
                         <td>
+                            <i class="fa-solid fa-circle-info"></i>
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>
                         </td>
@@ -84,11 +110,13 @@
 
                     <tr>
                         <td>#2</td>
-                        <td>João Pedro</td>
-                        <td>Vendedor</td>
+                        <td>PC Desktop</td>
+                        <td>N/A</td>
                         <td>Comercial</td>
-                        <td><span class="status ativo">Ativo</span></td>
+                        <td>Miguel</td>
+                        <td><span class="status uso">Em uso</span></td>
                         <td>
+                            <i class="fa-solid fa-circle-info"></i>
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>
                         </td>
@@ -96,11 +124,13 @@
 
                     <tr>
                         <td>#3</td>
-                        <td>Ana Reis</td>
-                        <td>Analista</td>
+                        <td>Monitor</td>
+                        <td>Samsung</td>
                         <td>Pós-venda</td>
-                        <td><span class="status inativo">Inativo</span></td>
+                        <td>Ary</td>
+                        <td><span class="status problema">Com problema</span></td>
                         <td>
+                            <i class="fa-solid fa-circle-info"></i>
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>
                         </td>
@@ -108,11 +138,13 @@
 
                     <tr>
                         <td>#4</td>
-                        <td>José Lindo</td>
-                        <td>Auxiliar</td>
+                        <td>Suporte</td>
+                        <td>Onistek</td>
                         <td>Logística</td>
-                        <td><span class="status ativo">Ativo</span></td>
+                        <td>João</td>
+                        <td><span class="status manutencao">Em manutenção</span></td>
                         <td>
+                            <i class="fa-solid fa-circle-info"></i>
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>
                         </td>
