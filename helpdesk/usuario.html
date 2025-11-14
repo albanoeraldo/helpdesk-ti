@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/usuarios.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <title>Usuários</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+        <div class="top-sidebar">
+            <img id="logo" src="imagens/logo.png" alt="logo">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- MENU -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-grip"></i> Dashboard</a></li>
+                <li><a href="chamados.html"><i class="fa-solid fa-bell"></i> Chamados</a></li>
+                <li><a href="usuario.html"><i class="fa-solid fa-users"></i> Usuários</a></li>
+                <li><a href="#"><i class="fa-solid fa-toolbox"></i> Equipamentos</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+            </ul>
+        </nav>
+        
+        </aside>
+        <div class="topbar">
+        <div class="topbar-esquerdo">
+            <h1>Usuários</h1>
+        </div>
+        <div class="topbar-direito">
+            <input type="text" placeholder="Buscar usuário...">
+            <button class="botao-chama">+ Novo Usuário</button>
+        </div>
+        </div>
+        
+        <section class="table-section">
+        <h3>Lista de Usuários</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Setor</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#001</td>
+                    <td>Maria Santos</td>
+                    <td>Vendedora</td>
+                    <td>Comercial</td>
+                    <td><span class="status ativo">Ativo</span></td>
+                    <td class="actions-col">
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#002</td>
+                    <td>João Pedro</td>
+                    <td>Auxiliar Administrativo</td>
+                    <td>Financeiro</td>
+                    <td><span class="status inativo">Inativo</span></td>
+                    <td class="actions-col">
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        
+        <script src="assets/js/script.js"></script>
+    </div>
+
+</body>
+</html>
