@@ -18,10 +18,13 @@
     --radius: 10px;
 }
 
+/* --- GERAL --- */
 body {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 100;
     font-style: normal;
+    background: var(--fundo-principal);
+    color: var(--texto);
 }
 
 .container {
@@ -48,8 +51,8 @@ body {
 
 /* --- SIDEBAR --- */
 .sidebar {
-    width: 100%;
-    height: auto;
+    width: 240px;
+    height: 100vh;
     background: var(--fundo-lateral);
     color: #fff;
     padding: 20px;
@@ -106,7 +109,16 @@ img#logo {
     border-radius: 6px;
 }
 
-/* Topbar do módulo */
+li {
+    list-style: none;
+}
+
+.content {
+    flex: 1;
+    padding: 25px;
+}
+
+/* --- TOPBAR --- */
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -122,7 +134,7 @@ img#logo {
 }
 
 .topbar-esquerdo h1 {
-    margin: 10px;
+    margin: 0;
 }
 
 .topbar-direito {
@@ -148,7 +160,7 @@ img#logo {
     font-weight: bold;
 }
 
-/* Tabela */
+/* --- TABELA --- */
 .table-section {
     margin-top: 30px;
 }
@@ -173,59 +185,34 @@ th, td {
 tbody tr {
     border-top: 1px solid #e5e5e5;
 }
-/* Status */
+
 .status {
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 13px;
+    color: var(--card);
 }
 
-.status.ativo {
-    background: #c9f7d2;
-    color: #1f8b3d;
-}
+.ativo { background: #2a9d8f; }
+.inativo { background: #e63946; }
 
-.status.inativo {
-    background: #ffd4d4;
-    color: #b52d2d;
-}
-
-/* Ícones */
-.actions-col i {
-    margin-right: 12px;
+td i {
+    margin-right: 10px;
     cursor: pointer;
-    color: #333;
 }
 
-.actions-col i:hover {
-    color: #0e6bd6;
-}
-
-/* Responsivo */
+/* --- RESPONSIVO --- */
 @media screen and (max-width: 768px) {
-
-    .topbar {
+    table {
+        font-size: 15px;
+    }
+    
+    .container {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
     }
 
-    .actions {
-        width: 100%;
-        display: flex;
-        gap: 10px;
-    }
-
-    .actions input {
-        flex: 1;
-    }
-
-    table th:nth-child(4),
-    table td:nth-child(4),
-    table th:nth-child(6),
-    table td:nth-child(6) {
-        display: none; /* Esconde colunas no mobile */
+    .topbar-direito {
+        margin-top: 10px;
     }
 
     .sidebar {
@@ -253,4 +240,5 @@ tbody tr {
         border-radius: 8px;
         margin-top: 10px;
     }
+
 }
