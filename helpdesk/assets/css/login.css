@@ -15,7 +15,6 @@
     --texto-inverso: #6f6f6f;
 
     --primaria: #24A148;
-    --radius: 10px;
 }
 
 body {
@@ -59,7 +58,7 @@ h2 {
     margin: 0;
 }
 
-.input-box {
+.entrada {
     display: flex;
     align-items: center;
     background: var(--fundo-principal);
@@ -68,12 +67,12 @@ h2 {
     margin-bottom: 15px;
 }
 
-.input-box i {
+.entrada i {
     margin-right: 10px;
     color: var(--texto);
 }
 
-.input-box input {
+.entrada input {
     border: none;
     outline: none;
     background: transparent;
@@ -82,7 +81,7 @@ h2 {
 
 .btn-login {
     width: 100%;
-    background: #28a745;
+    background: var(--primaria);
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -96,7 +95,7 @@ h2 {
     background: var(--primaria);
 }
 
-#errorMsg {
+#error {
     color: red;
     font-size: 14px;
     margin-top: 10px;
