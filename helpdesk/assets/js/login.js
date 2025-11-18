@@ -3,7 +3,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
     const email = document.getElementById("email").value;
     const senha = document.getElementById("senha").value;
-    const errorMsg = document.getElementById("errorMsg");
+    const errorMsg = document.getElementById("error");
 
     // Login simples, sem backend
     const emailCorreto = "admin@helpdesk.com";

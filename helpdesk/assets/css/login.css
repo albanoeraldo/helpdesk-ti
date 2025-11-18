@@ -63,8 +63,16 @@ h2 {
     align-items: center;
     background: var(--fundo-principal);
     padding: 10px;
+    border: 1px solid var(--texto-inverso);
     border-radius: 8px;
     margin-bottom: 15px;
+}
+
+#loginForm label{
+    display: flex;
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: .9em;
 }
 
 .entrada i {
@@ -73,6 +81,7 @@ h2 {
 }
 
 .entrada input {
+    padding: 3px;
     border: none;
     outline: none;
     background: transparent;
@@ -93,6 +102,18 @@ h2 {
 
 .btn-login:hover {
     background: var(--primaria);
+}
+
+.lembre {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    font-size: .8em;
+}
+
+.RecSenha a {
+    text-decoration: none;
+    color: var(--primaria);
 }
 
 #error {

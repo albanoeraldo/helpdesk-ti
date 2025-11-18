@@ -8,6 +8,7 @@
     </style>
     <link rel="stylesheet" href="helpdesk/assets/css/login.css">
     <link rel="shortcut icon" href="helpdesk/imagens/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7cd5b377e4.js" crossorigin="anonymous"></script>
     <title>HelpDesk</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <form id="loginForm">
             <label>Email</label>
             <div class="entrada">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-regular fa-envelope-open"></i>
                 <input type="email" id="email" required>
             </div>
 
@@ -30,9 +31,19 @@
             <div class="entrada">
                 <i class="fa-solid fa-lock"></i>
                 <input type="password" id="senha" required>
+                <i class="fa-regular fa-eye-slash"></i>
             </div>
 
             <button type="submit" class="btn-login">Entrar</button>
+            <div class="lembre">
+                <div>
+                    <input type="checkbox" name="lembreM" id="lembreM"> Se lembre de mim
+                </div>
+            
+                <div class="RecSenha">
+                    <a href="recsenha.html">Recuperar senha</a>
+                </div>
+            </div>
 
             <span id="error"></span>
         </form>
