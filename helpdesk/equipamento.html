@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/equipamento.css">
+    <link rel="shortcut icon" href="helpdesk/imagens/favicon.ico" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/7cd5b377e4.js" crossorigin="anonymous"></script>
+    <title>HelpDesk</title>
+</head>
+    <!-- para ver a página do login primeiro -->
+    <script>
+    if (localStorage.getItem("logado") !== "true") {
+    window.location.href = "../index.html";
+    }
+    </script>
+<body>
+    <div class="container">
+    <aside class="sidebar">
+
+    <div class="top-sidebar">
+        <img id="logo" src="assets/imagens/logo.png" alt="logo">
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <ul>
+            <li><a href="dashboard.html"><i class="fa-solid fa-grip"></i> Dashboard</a></li>
+            <li><a href="chamado.html"><i class="fa-solid fa-bell"></i> Chamados</a></li>
+            <li><a href="usuario.html"><i class="fa-solid fa-users"></i> Usuários</a></li>
+            <li><a href="equipamento.html"><i class="fa-solid fa-toolbox"></i> Equipamentos</a></li>
+            <li><a href="#"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+        </ul>
+    </nav>
+
+</aside>
+
+    <main class="content">
+
+        <div class="topbar">
+
+        <div class="topbar-esquerdo">
+            <h1>Equipamentos</h1>
+        </div>
+
+        <div class="topbar-direito">
+            <input type="text" placeholder="Buscar equipamento...">
+            <button class="botao-chama">Novo Equipamento</button>
+        </div>
+
+        </div>
+
+        <!-- Cards inicio -->
+        <section class="cards"> 
+            <div class="card">
+                <p>Total de Equipamentos</p>
+                <h2>135</h2>
+            </div>
+
+            <div class="card">
+                <p>Em uso</p>
+                <h2>100</h2>
+            </div>
+
+            <div class="card">
+                <p>Em manutenção</p>
+                <h2>25</h2>
+            </div>
+
+            <div class="card">
+                <p>Com problemas</p>
+                <h2>10</h2>
+            </div>
+        </section>
+
+        <!-- Tabela -->
+        <section class="table-section">
+            <h3>Lista de Equipamentos</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo</th>
+                        <th>Marca</th>
+                        <th>Setor responsável</th>
+                        <th>Usuário responsável</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>Notebook</td>
+                        <td>ACER</td>
+                        <td>Financeiro</td>
+                        <td>Luiz</td>
+                        <td><span class="status uso">Em uso</span></td>
+                        <td>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#2</td>
+                        <td>PC Desktop</td>
+                        <td>N/A</td>
+                        <td>Comercial</td>
+                        <td>Miguel</td>
+                        <td><span class="status uso">Em uso</span></td>
+                        <td>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#3</td>
+                        <td>Monitor</td>
+                        <td>Samsung</td>
+                        <td>Pós-venda</td>
+                        <td>Ary</td>
+                        <td><span class="status problema">Com problema</span></td>
+                        <td>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#4</td>
+                        <td>Suporte</td>
+                        <td>Onistek</td>
+                        <td>Logística</td>
+                        <td>João</td>
+                        <td><span class="status manutencao">Em manutenção</span></td>
+                        <td>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+        <!-- sair -->
+        <button id="logoutBtn">Sair</button>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+</div>
+</body>
+</html>

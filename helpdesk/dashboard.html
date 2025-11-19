@@ -8,22 +8,22 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     </style>
-    <link rel="stylesheet" href="helpdesk/assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
     <script src="https://kit.fontawesome.com/7cd5b377e4.js" crossorigin="anonymous"></script>
 </head>
 <!-- para ver a página do login primeiro -->
-<script>
-if (localStorage.getItem("logado") !== "true") {
-    window.location.href = "index.html";
-}
-</script>
+    <script>
+    if (localStorage.getItem("logado") !== "true") {
+    window.location.href = "../index.html";
+    }
+    </script>
 
 <body>
     <div class="container">
     <aside class="sidebar">
 
     <div class="top-sidebar">
-        <img id="logo" src="helpdesk/imagens/logo.png" alt="logo">
+        <img id="logo" src="assets/imagens/logo.png" alt="logo">
 
         <div class="menu-toggle">
             <span></span>
@@ -88,7 +88,7 @@ if (localStorage.getItem("logado") !== "true") {
 
     </main>
 
-    <script src="helpdesk/assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </div>
 </body>

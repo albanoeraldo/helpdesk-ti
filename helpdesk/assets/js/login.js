@@ -14,7 +14,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         localStorage.setItem("logado", "true");
 
         // Vai para o dashboard
-        window.location.href = "dashboard.html";
+        window.location.href = "./helpdesk/dashboard.html";
     } else {
         errorMsg.textContent = "Email ou senha incorretos!";
     }

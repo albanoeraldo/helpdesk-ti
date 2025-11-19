@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="helpdesk/assets/css/usuarios.css">
+    <title>HelpDesk</title>
+    <link rel="shortcut icon" href="helpdesk/imagens/favicon.ico" type="image/x-icon">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     </style>
-    <link rel="shortcut icon" href="helpdesk/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/chamado.css">
     <script src="https://kit.fontawesome.com/7cd5b377e4.js" crossorigin="anonymous"></script>
-    <title>HelpDesk</title>
 </head>
     <!-- para ver a página do login primeiro -->
     <script>
     if (localStorage.getItem("logado") !== "true") {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
     }
     </script>
 
@@ -23,7 +23,7 @@
     <aside class="sidebar">
 
     <div class="top-sidebar">
-        <img id="logo" src="helpdesk/imagens/logo.png" alt="logo">
+        <img id="logo" src="assets/imagens/logo.png" alt="logo">
 
         <div class="menu-toggle">
             <span></span>
@@ -50,26 +50,50 @@
         <div class="topbar">
 
         <div class="topbar-esquerdo">
-            <h1>Usuários</h1>
+            <h1>Chamados</h1>
         </div>
 
         <div class="topbar-direito">
-            <input type="text" placeholder="Buscar Usuário...">
-            <button class="botao-chama">Novo Usuário</button>
+            <input type="text" placeholder="Buscar chamado...">
+            <button class="botao-chama">Novo Chamado</button>
         </div>
 
         </div>
+
+
+        <!-- Cards inicio -->
+        <section class="cards"> 
+            <div class="card">
+                <p>Total de Chamados</p>
+                <h2>142</h2>
+            </div>
+
+            <div class="card">
+                <p>Em andamento</p>
+                <h2>37</h2>
+            </div>
+
+            <div class="card">
+                <p>Concluídos</p>
+                <h2>95</h2>
+            </div>
+
+            <div class="card">
+                <p>Pendentes</p>
+                <h2>10</h2>
+            </div>
+        </section>
+
 
         <!-- Tabela -->
         <section class="table-section">
-            <h3>Lista de Usuários</h3>
+            <h3>Chamados Recentes</h3>
 
             <table>
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nome</th>
-                        <th>Cargo</th>
+                        <th>Solicitante</th>
                         <th>Setor</th>
                         <th>Status</th>
                         <th>Ações</th>
@@ -78,50 +102,32 @@
 
                 <tbody>
                     <tr>
-                        <td>#1</td>
+                        <td>#1023</td>
                         <td>Maria Santos</td>
-                        <td>Gestor</td>
                         <td>Financeiro</td>
-                        <td><span class="status ativo">Ativo</span></td>
+                        <td><span class="status andamento">Em andamento</span></td>
                         <td>
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-trash"></i>
+                            
                         </td>
                     </tr>
 
                     <tr>
-                        <td>#2</td>
+                        <td>#1024</td>
                         <td>João Pedro</td>
-                        <td>Vendedor</td>
                         <td>Comercial</td>
-                        <td><span class="status ativo">Ativo</span></td>
+                        <td><span class="status concluido">Concluído</span></td>
                         <td>
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-trash"></i>
+                            
                         </td>
                     </tr>
 
                     <tr>
-                        <td>#3</td>
+                        <td>#1025</td>
                         <td>Ana Reis</td>
-                        <td>Analista</td>
-                        <td>Pós-venda</td>
-                        <td><span class="status inativo">Inativo</span></td>
+                        <td>TI</td>
+                        <td><span class="status pendente">Pendente</span></td>
                         <td>
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-trash"></i>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>#4</td>
-                        <td>José Lindo</td>
-                        <td>Auxiliar</td>
-                        <td>Logística</td>
-                        <td><span class="status ativo">Ativo</span></td>
-                        <td>
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-trash"></i>
+                            
                         </td>
                     </tr>
                 </tbody>
@@ -130,9 +136,10 @@
         </section>
         <!-- sair -->
         <button id="logoutBtn">Sair</button>
+
     </main>
 
-    <script src="helpdesk/assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </div>
 </body>
